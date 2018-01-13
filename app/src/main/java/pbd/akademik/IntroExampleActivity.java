@@ -42,6 +42,10 @@ public class IntroExampleActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //onCreateExample();
+    }
+
+    private void onCreateExample(){
         setContentView(R.layout.activity_realm_basic_example);
         rootLayout = ((LinearLayout) findViewById(R.id.container));
         rootLayout.removeAllViews();
