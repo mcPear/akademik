@@ -18,6 +18,7 @@ package pbd.akademik.model;
 
 import io.realm.RealmObject;
 import io.realm.annotations.RealmClass;
+import io.realm.annotations.Required;
 
 public class Dog extends RealmObject {
     public String name;
