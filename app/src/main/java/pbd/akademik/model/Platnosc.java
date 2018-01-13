@@ -2,6 +2,8 @@ package pbd.akademik.model;
 
 import io.realm.RealmList;
 import io.realm.RealmObject;
+import io.realm.RealmResults;
+import io.realm.annotations.LinkingObjects;
 import io.realm.annotations.Required;
 
 /**
@@ -12,4 +14,7 @@ public class Platnosc extends RealmObject {
     public String nazwa;
     public Wniosek wniosek;
     public RealmList<Okres> okresy;
+
+    @LinkingObjects("platnosc")
+    public final RealmResults<Okres> okresyLinking = null;
 }

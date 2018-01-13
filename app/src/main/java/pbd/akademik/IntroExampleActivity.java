@@ -24,12 +24,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import io.realm.Realm;
-import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 import io.realm.Sort;
-import pbd.akademik.model.Cat;
-import pbd.akademik.model.Dog;
-import pbd.akademik.model.Person;
+import pbd.akademik.examplemodel.Cat;
+import pbd.akademik.examplemodel.Dog;
+import pbd.akademik.examplemodel.Person;
 
 
 public class IntroExampleActivity extends Activity {

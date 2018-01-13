@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package pbd.akademik.model;
+package pbd.akademik.examplemodel;
 
 import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.Ignore;
-import io.realm.annotations.RealmClass;
+import pbd.akademik.examplemodel.Cat;
+import pbd.akademik.examplemodel.Dog;
 
 // Your model just have to extend RealmObject.
 // This will inherit an annotation which produces proxy getters and setters for all fields.

@@ -1,6 +1,8 @@
 package pbd.akademik.model;
 
 import io.realm.RealmObject;
+import io.realm.RealmResults;
+import io.realm.annotations.LinkingObjects;
 import io.realm.annotations.Required;
 
 /**
@@ -17,4 +19,14 @@ public class Uzytkownik extends RealmObject {
     public String haslo;
     @Required
     public String rola;
+
+    @LinkingObjects("administartor")
+    public final RealmResults<Akademik> akademiki = null;
+
+    @LinkingObjects("student")
+    public final RealmResults<Wniosek> wnioskiStudent = null;
+
+    @LinkingObjects("pracownik")
+    public final RealmResults<Wniosek> wnioskiPracownik = null;
+
 }

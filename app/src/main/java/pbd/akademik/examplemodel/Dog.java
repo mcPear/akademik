@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package pbd.akademik.model;
+package pbd.akademik.examplemodel;
 
 import io.realm.RealmObject;
 import io.realm.annotations.RealmClass;

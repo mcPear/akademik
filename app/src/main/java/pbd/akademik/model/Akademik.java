@@ -1,6 +1,8 @@
 package pbd.akademik.model;
 
 import io.realm.RealmObject;
+import io.realm.RealmResults;
+import io.realm.annotations.LinkingObjects;
 import io.realm.annotations.Required;
 
 /**
@@ -22,4 +24,7 @@ public class Akademik extends RealmObject{
 
     public Miasto miasto;
     public Uzytkownik administrator;
+
+    @LinkingObjects("akademik")
+    public final RealmResults<Pokoj> pokoje = null;
 }

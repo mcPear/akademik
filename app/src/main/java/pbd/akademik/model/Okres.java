@@ -2,6 +2,8 @@ package pbd.akademik.model;
 
 import io.realm.RealmList;
 import io.realm.RealmObject;
+import io.realm.RealmResults;
+import io.realm.annotations.LinkingObjects;
 import io.realm.annotations.Required;
 
 import java.util.Date;
@@ -15,4 +17,10 @@ public class Okres extends RealmObject {
 
     public RealmList<Wniosek> wnioski;
     public RealmList<Platnosc> platnosci;
+
+    @LinkingObjects("okres")
+    public final RealmResults<Wniosek> wnioskiLinking = null;
+
+    @LinkingObjects("okres")
+    public final RealmResults<Platnosc> platnosciLinking = null;
 }
