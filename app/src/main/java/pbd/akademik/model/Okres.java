@@ -18,9 +18,9 @@ public class Okres extends RealmObject {
     public RealmList<Wniosek> wnioski;
     public RealmList<Platnosc> platnosci;
 
-    @LinkingObjects("okres")
+    @LinkingObjects("okresy")
     public final RealmResults<Wniosek> wnioskiLinking = null;
 
-    @LinkingObjects("okres")
+    @LinkingObjects("okresy")
     public final RealmResults<Platnosc> platnosciLinking = null;
 }

@@ -20,7 +20,7 @@ public class Uzytkownik extends RealmObject {
     @Required
     public String rola;
 
-    @LinkingObjects("administartor")
+    @LinkingObjects("administrator")
     public final RealmResults<Akademik> akademiki = null;
 
     @LinkingObjects("student")
@@ -28,5 +28,17 @@ public class Uzytkownik extends RealmObject {
 
     @LinkingObjects("pracownik")
     public final RealmResults<Wniosek> wnioskiPracownik = null;
+
+    public boolean isPracownik(){
+        return rola.equals(Rola.PRACOWNIK);
+    }
+
+    public boolean isStudent(){
+        return rola.equals(Rola.STUDENT);
+    }
+
+    public boolean isAdministrator(){
+        return rola.equals(Rola.ADMINISTRATOR);
+    }
 
 }
